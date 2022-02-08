@@ -43,7 +43,7 @@ async fn main() -> Result<(), Error> {
     params.first_name = "Mark".to_string();
     params.last_name = "Smith".to_string();
     params.phone_number = "09039658058".to_string();
-    params.tracking_reference = generat;
+    params.tracking_reference = "0012".to_string();
     params.email = "example@email.com".to_string();
     
     let resp = VirtualAccount::create_virtual_account(&kuda_client, request)
